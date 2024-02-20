@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...your-sha512-code-here..." crossorigin="anonymous" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="prelaz" style="background-color: #2e3d28;">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="navigacija mobile-menu">
+                    <li class="opcije"><a href="index.html">Početna strana</a></li>
+                    <li class="opcije"><a href="destinacije.html">Destinacije</a></li>
+                    <li class="opcije"><a href="galerija.html">Galerija</a></li>
+                    <li class="opcije"><a href="fest.html">SoFest</a></li>
+                    <li class="opcije active"><a href="kontakt.html">Kontakt</a></li>
+                </ul> 
+            </div>
+        </div>
+    </nav> 
+
+    <section class="kontakt">
+        <div class="container">
+            <h2>Kontakt</h2>
+           
+    <div class="kontakt-forma">
+        <div class="kontakt-forma">
+            <h3>Kontaktirajte nas</h3>
+            <form id="forma-kontakt" onsubmit="return validacijaForme()">
+                <div class="form-red">
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime" name="ime" required>
+                </div>
+                <div class="form-red">
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime" name="prezime" required>
+                </div>
+                <div class="form-red">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-red">
+                    <label for="lozinka">Lozinka:</label>
+                    <input type="password" id="lozinka" name="lozinka" required>
+                </div>
+                <div class="form-red">
+                    <label for="potvrdaLozinke">Potvrda lozinke:</label>
+                    <input type="password" id="potvrdaLozinke" name="potvrdaLozinke" required>
+                </div>
+                <div class="form-red">
+                    <button type="submit">Pošalji</button>
+                </div>
+            </form>
+            <div id="greskaPoruka" class="greska-poruka"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>O Sopotu</h3>
+                    <p style="font-size: 0.8em; opacity: 0.8; font-style:italic;">Opština Sopot je lokalna samoupravna jedinica smeštena u centralnom delu Srbije. Nalazi se u Šumadiji, nedaleko od glavnog grada Beograda, i predstavlja spoj bogate istorije, prirodne lepote i savremenog života.</p>
+            
+                </div>
+                <div id="popularLinks" class="footer-column">
+                    <h3>Najčešće otvarane stranice:</h3>
+                    <ul id="popularLinksList"></ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Društvene mreže</h3>
+                    <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afe4I3UZs0uUYXwdcOs-3V-gY2X9bVltspgq4FNlOWAZR1VCtIp-PBDEjo-IHOEpWbRhpub6908hZ3QTko-0PSDjQKY5r9An4knJvqwTQbQ4DA&smuh=58292&lh=Ac-gTydI4e-AsVC6TAw" class="ikonica"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="ikonica"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </footer>
+
+    
+
+    
+
+</body>
+</html>

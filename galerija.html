@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...your-sha512-code-here..." crossorigin="anonymous" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="prelaz" style="background-color: #2e3d28;">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="navigacija mobile-menu">
+                    <li class="opcije"><a href="index.html">Početna strana</a></li>
+                    <li class="opcije"><a href="destinacije.html">Destinacije</a></li>
+                    <li class="opcije active"><a href="galerija.html">Galerija</a></li>
+                    <li class="opcije"><a href="fest.html">SoFest</a></li>
+                    <li class="opcije"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <section class="galerija">
+        <div class="container">
+            <h2 style="padding-bottom: 30px;">Galerija slika</h2>
+            <div class="slidercont fade-in">
+                <div class="slider prelaz">
+                    <img class="slikaslajd" src="imgGalerija/slider1.png" style="width:100%" alt="Slika 1 slider">
+                  </div>
+                
+                  <div class="slider prelaz">
+                    <img class="slikaslajd" src="imgGalerija/slider2.png" style="width:100%" alt="Slika 2 slider">
+                  </div>
+                
+                  <div class="slider prelaz">
+                    <img class="slikaslajd" src="imgGalerija/slider3.png" style="width:100%" alt="Slika 3 slider">
+                  </div>
+          
+                  <a class="prev" onclick="pomeri(-1)">&#10094;</a>
+                  <a class="next" onclick="pomeri(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="galerija-container">
+                <div>
+                    <a href="imgGalerija/1.jpg" target="_blank"><img src="imgGalerija/1.jpg" alt="Slika 1"></a>
+                    <p class="opisSlike">Doksat u parku</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/2.jpg" target="_blank"><img src="imgGalerija/2.jpg" alt="Slika 2"></a>
+                    <p class="opisSlike">Fontatna centra za kulturu</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/3.jpg" target="_blank"><img src="imgGalerija/3.jpg" alt="Slika 3"></a>
+                    <p class="opisSlike">Spomenik na Kosmaju</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/4.jpg" target="_blank"><img src="imgGalerija/4.jpg" alt="Slika 4"></a>
+                    <p class="opisSlike">Manastir Kasteljan</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/5.jpg" target="_blank"><img src="imgGalerija/5.jpg" alt="Slika 5"></a>
+                    <p class="opisSlike">Vodopadi Babe</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/6.jpg" target="_blank"><img src="imgGalerija/6.jpg" alt="Slika 6"></a>
+                    <p class="opisSlike">Pogled na Kosmaj</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/7.jpg" target="_blank"><img src="imgGalerija/7.jpg" alt="Slika 7"></a>
+                    <p class="opisSlike">Priroda</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/8.jpg" target="_blank"><img src="imgGalerija/8.jpg" alt="Slika 8"></a>
+                    <p class="opisSlike">Šumska kuća</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/9.jpg" target="_blank"><img src="imgGalerija/9.jpg" alt="Slika 9"></a>
+                    <p class="opisSlike">Jezero Trešnja</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/10.jpg" target="_blank"><img src="imgGalerija/10.jpg" alt="Slika 10"></a>
+                    <p class="opisSlike">Filmski festival</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/11.jpg" target="_blank"><img src="imgGalerija/11.jpg" alt="Slika 11"></a>
+                    <p class="opisSlike">Zgrada opštine</p>
+                </div>
+                <div>
+                    <a href="imgGalerija/12.jpg" target="_blank"><img src="imgGalerija/12.jpg" alt="Slika 12"></a>
+                    <p class="opisSlike">Park</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>O Sopotu</h3>
+                    <p style="font-size: 0.8em; opacity: 0.8; font-style:italic;">Opština Sopot je lokalna samoupravna jedinica smeštena u centralnom delu Srbije. Nalazi se u Šumadiji, nedaleko od glavnog grada Beograda, i predstavlja spoj bogate istorije, prirodne lepote i savremenog života.</p>
+            
+                </div>
+                <div id="popularLinks" class="footer-column">
+                    <h3>Najčešće otvarane stranice:</h3>
+                    <ul id="popularLinksList"></ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Društvene mreže</h3>
+                    <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afe4I3UZs0uUYXwdcOs-3V-gY2X9bVltspgq4FNlOWAZR1VCtIp-PBDEjo-IHOEpWbRhpub6908hZ3QTko-0PSDjQKY5r9An4knJvqwTQbQ4DA&smuh=58292&lh=Ac-gTydI4e-AsVC6TAw" class="ikonica"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="ikonica"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>

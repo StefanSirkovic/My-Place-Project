@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinacije</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...your-sha512-code-here..." crossorigin="anonymous" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="prelaz" style="background-color: #2e3d28;">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="navigacija mobile-menu">
+                    <li class="opcije"><a href="index.html">Početna strana</a></li>
+                    <li class="opcije active"><a href="destinacije.html">Destinacije</a></li>
+                    <li class="opcije"><a href="galerija.html">Galerija</a></li>
+                    <li class="opcije"><a href="fest.html">SoFest</a></li>
+                    <li class="opcije"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <section class="destinacije">
+        <div class="container">
+            <h2 style="padding-bottom: 30px;">Zanimljive Destinacije</h2>
+            <div class="destinacije-container">
+                <div class="destinacija fade-in">
+                    <img src="img/kosmaj.png" alt="Destinacija 1">
+                    <h3>Planina Kosmaj</h3>
+                    <p>Planina Kosmaj, smeštena u blizini Beograda, predstavlja popularnu destinaciju za one koji traže beg od gradske vreve i žele da uživaju u prirodnom okruženju. Ova planina, deo Šumadijskog regiona, pruža prelepe pejzaže, istorijske znamenitosti i raznovrsne aktivnosti za posetioce.</p>
+                    <div class="mapa">
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28324.29086553156!2d20.50238368680077!3d44.28619015493225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475021d06c3cc453%3A0x400d6a8a25aa0d!2sKosmaj!5e0!3m2!1sen!2srs!4v1678196008283!5m2!1sen!2srs" width="82%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+        
+                </div>
+                <div class="destinacija fade-in">
+                    <img src="img/tresije.png" alt="Destinacija 2">
+                    <h3>Manastir Tresije</h3>
+                    <p>Manastir Tresije, smešten na području planine Kosmaj, predstavlja izuzetan duhovni centar i istorijski dragulj Šumadije. Sa svojim mirnim okruženjem, bogatom istorijom i arhitektonskim lepotama, ovaj manastir privlači posetioce željne duhovnog iskustva i kulturnog istraživanja.</p>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28323.89422354038!2d20.48547808680122!3d44.29571475456318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47502125c8230db1%3A0x531f5b72c6f754ec!2sManastir%20Tresije!5e0!3m2!1sen!2srs!4v1678196021360!5m2!1sen!2srs" width="82%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="destinacija fade-in">
+                    <img src="img/babe.jpg" alt="Destinacija 3">
+                    <h3>Babe</h3>
+                    <p>Četrdesetak kilometara od Beograda, u podnožju planine Kosmaj, na oko 270 metara nadmorske visine, nalazi se selo Babe. Selo je dobilo ime po Rimljaninu Baberiusu koji je u trećem veku ovde eksploatisao rudu olova, jer je ovo područje obilovalo rudama gvožđa, olova, antimona, mangana...</p>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11354.90317233487!2d20.543139014355785!3d44.419561581059945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47501fcedc7e2e3f%3A0x400d6a8a25a9c0!2sBabe%2C%20Serbia!5e0!3m2!1sen!2srs!4v1678196034246!5m2!1sen!2srs" width="82%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>O Sopotu</h3>
+                    <p style="font-size: 0.8em; opacity: 0.8; font-style:italic;">Opština Sopot je lokalna samoupravna jedinica smeštena u centralnom delu Srbije. Nalazi se u Šumadiji, nedaleko od glavnog grada Beograda, i predstavlja spoj bogate istorije, prirodne lepote i savremenog života.</p>
+            
+                </div>
+                <div id="popularLinks" class="footer-column">
+                    <h3>Najčešće otvarane stranice:</h3>
+                    <ul id="popularLinksList"></ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Društvene mreže</h3>
+                    <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afe4I3UZs0uUYXwdcOs-3V-gY2X9bVltspgq4FNlOWAZR1VCtIp-PBDEjo-IHOEpWbRhpub6908hZ3QTko-0PSDjQKY5r9An4knJvqwTQbQ4DA&smuh=58292&lh=Ac-gTydI4e-AsVC6TAw" class="ikonica"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="ikonica"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    
+
+</body>
+</html>

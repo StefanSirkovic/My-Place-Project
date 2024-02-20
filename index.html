@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocetna strana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...your-sha512-code-here..." crossorigin="anonymous" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img src="img/naslovna.png" class="naslovna" alt="Naslovna slika">
+            <div class="naslov">
+                <p class="glavniNaslov fade-in">OPŠTINA SOPOT</p>
+                <p class="podnaslov glavniNaslov fade-in">Malo mesto, velika ljubav</p>
+            </div>
+            <div class="prelaz">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="navigacija mobile-menu">
+                    <li class="opcije active"><a href="index.html">Početna strana</a></li>
+                    <li class="opcije"><a href="destinacije.html">Destinacije</a></li>
+                    <li class="opcije"><a href="galerija.html">Galerija</a></li>
+                    <li class="opcije"><a href="fest.html">SoFest</a></li>
+                    <li class="opcije"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="naslovna-container">
+        <p class="glavniNaslov sekcijaNaslov">Dobrodošli u Opštinu Sopot</p>
+        <div class="slajder-container">
+            <div class="slajder-wrapper">
+                <div class="slajder-item"><img src="img/park.jpg" alt="Slika 1"></div>
+                <div class="slajder-item"><img src="img/centar.jpg" alt="Slika 2"></div>
+                <div class="slajder-item"><img src="img/noc.jpg" alt="Slika 3"></div>
+                
+            </div>
+        </div>
+    </div>
+
+<section class="o-sopotu">
+    <div class="kontejner">
+        <div class="o-sopotu-sadrzaj">
+            <div class="o-sopotu-tekst">
+                <h2>Nešto o Sopotu</h2>
+                <p>Opština Sopot smeštena je u centralnom delu Srbije u Šumadiji. Nedaleko od glavnog grada Beograda, ovo mesto predstavlja spoj bogate istorije, prirodne lepote i savremenog života.</p>
+                <p>Sopot ima dugu tradiciju koja seže unazad vekovima. Sa svojom autentičnom arhitekturom, slikovitim pejzažima i gostoljubivim stanovništvom, Opština Sopot privlači posetioce iz različitih krajeva sveta.</p>
+                <p>Ovde možete istražiti bogato kulturno nasleđe, uživati u prelepim prirodnim parkovima i doživeti jedinstveni duh zajednice. Opština Sopot ponosno nosi titulu malog mesta sa velikom ljubavlju.</p>
+                <p>Sopot se ponosi svojom raznovrsnom kulturnom scenom. Posetite lokalne muzeje, galerije i tradicionalne manifestacije kako biste bolje upoznali istoriju i umetnost ovog grada.</p>
+                <div class="saznaj-vise-button">
+                   <a href="destinacije.html"><button>Saznaj više</button></a> 
+                </div>
+            </div>
+           
+            <div class="o-sopotu-slika">
+                <img src="img/spomenik.jpg" alt="Slika spomenik">
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>O Sopotu</h3>
+                    <p style="font-size: 0.8em; opacity: 0.8; font-style:italic;">Opština Sopot je lokalna samoupravna jedinica smeštena u centralnom delu Srbije. Nalazi se u Šumadiji, nedaleko od glavnog grada Sopota, i predstavlja spoj bogate istorije, prirodne lepote i savremenog života.</p>
+
+                </div>
+                <div id="popularLinks" class="footer-column">
+                    <h3 >Najčešće otvarane stranice:</h3>
+                    <ul id="popularLinksList"></ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Društvene mreže</h3>
+                    <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=Afe4I3UZs0uUYXwdcOs-3V-gY2X9bVltspgq4FNlOWAZR1VCtIp-PBDEjo-IHOEpWbRhpub6908hZ3QTko-0PSDjQKY5r9An4knJvqwTQbQ4DA&smuh=58292&lh=Ac-gTydI4e-AsVC6TAw" class="ikonica"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="ikonica"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <script>
+        const slajderWrapper = document.querySelector('.slajder-wrapper');
+        let currentIndex = 0;
+    
+        function prikaziSliku(index) {
+            currentIndex = index;
+            const translateValue = -index * 100 + '%';
+            slajderWrapper.style.transform = 'translateX(' + translateValue + ')';
+        }
+    
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slajderWrapper.children.length;
+            prikaziSliku(currentIndex);
+        }, 3000);
+
+        
+    </script>
+    
+
+</body>
+</html>
